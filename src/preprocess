@@ -1,0 +1,12 @@
+# USeful Libraries
+import yaml
+from packages.preprocess_utilities import data_preprocessor
+from os.path import join
+
+
+params = yaml.safe_load(open("params.yaml"))["preprocess"]
+raw_path = join("data", "raw")
+processed_path = join("data", "processed")
+processed_file_name = params['final_file_name']
+
+data_preprocessor(raw_path, processed_path, processed_file_name)
