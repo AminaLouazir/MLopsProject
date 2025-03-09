@@ -2,5 +2,20 @@ preprocess:
     files_ext: '.tsv'
     final_ext: '.csv'
     final_file_name: 'combined_files'
+
 evaluate:
     sample_size: 100
+
+dvc_config:
+    DVC_REMOTE_URL: "https://dagshub.com/AminaLouazir/MLopsProject.mlflow"
+    USERNAME: "AminaLouazir"
+    PASSWORD: ''
+
+model_data_config:
+    MODEL_PATH: "./models"
+    METRICS_PATH: "./data"
+
+
+ec2_prepare:
+    DAGSHUB_REMOTE_URL: "https://dagshub.com/AminaLouazir/MLopsProject.mlflow"
+    REQUIREMENTS: "requirements.txt"
