@@ -49,3 +49,7 @@ if __name__ == "__main__":
             # Optionally, log other relevant metrics or parameters here
             # e.g., mlflow.log_param("parameter_name", "parameter_value")
             # mlflow.log_artifact("path_to_file") for artifacts/logs if needed
+
+        # Save the model to a directory after the run is finished
+        model_save_path = "models/zsmlc_classifier"
+        zsmlc_classifier.save_pretrained(model_save_path)

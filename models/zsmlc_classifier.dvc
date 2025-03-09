@@ -1,0 +1,6 @@
+outs:
+- md5: eaadb65970962e5966be924588d3ea1d.dir
+  size: 2261792860
+  nfiles: 6
+  hash: md5
+  path: zsmlc_classifier
